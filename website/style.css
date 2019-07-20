@@ -14,8 +14,69 @@ li, a {
     text-decoration: none;
 }
 
+.body_grid {
+    margin: 0 auto;
+    padding: 0 1rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap: 24px;
+    max-width: 960px;
+}
+
 /* mobile */
 @media only screen and (max-width: 400px) {
+
+    .grand_navigation_flex {
+        display:flex;
+        justify-content: flex-start;
+        flex-flow: row nowrap;
+        padding: 22px 10%;
+        border-bottom: 1px solid #efefef
+    }
+
+    .navigation_list {
+        list-style: none;
+    }
+
+    .navigation_items {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .navigaion_item {
+        transition: all 0.3s ease 0s;
+        color: #34495e
+    }
+
+    .navigaion_item:hover {
+        color: #2980b9
+    }
+
+    /* index.html */
+    .example1 {
+        grid-column: 1 / 9;
+    }
+    
+    .example2 {
+        grid-column: 1 / 9;
+    }
+
+    /* about.html */
+    .profile_photo {
+        grid-column: 1 / 9;
+    }
+
+    .profile_personal_info {
+        grid-column: 1 / 9;
+    }
+
+    .profile_contact_info {
+        grid-column: 1 / 9;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
     
     .grand_navigation_flex {
         display:flex;
@@ -42,34 +103,27 @@ li, a {
     .navigaion_item:hover {
         color: #2980b9
     }
-}
 
-/* tablet */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    .grand_navigation_flex {
-        display:flex;
-        justify-content: flex-start;
-        flex-flow: row nowrap;
-        padding: 22px 10%;
-        border-bottom: 1px solid #efefef
+    /* index.html */
+    .example1 {
+        grid-column: 1 / 5;
+    }
+    
+    .example2 {
+        grid-column: 5 / 9;
     }
 
-    .navigation_list {
-        list-style: none;
+    /* about.html */
+    .profile_photo {
+        grid-column: 1 / 3;
     }
 
-    .navigation_items {
-        display: inline-block;
-        padding: 0px 20px;
+    .profile_personal_info {
+        grid-column: 3 / 9;
     }
 
-    .navigaion_item {
-        transition: all 0.3s ease 0s;
-        color: #34495e
-    }
-
-    .navigaion_item:hover {
-        color: #2980b9
+    .profile_contact_info {
+        grid-column: 1 / 9;
     }
 }
 
@@ -77,7 +131,7 @@ li, a {
 @media only screen and (min-width: 961px) {
     
     .grand_navigation_flex {
-        display:flex;
+        display: flex;
         justify-content: flex-start;
         flex-flow: row nowrap;
         padding: 22px 10%;
@@ -100,5 +154,27 @@ li, a {
 
     .navigaion_item:hover {
         color: #2980b9
+    }
+
+    /* index.html */
+    .example1 {
+        grid-column: 1 / 5;
+    }
+    
+    .example2 {
+        grid-column: 5 / 9;
+    }
+
+    /* about.html */
+    .profile_photo {
+        grid-column: 1 / 3;
+    }
+
+    .profile_personal_info {
+        grid-column: 3 / 9;
+    }
+
+    .profile_contact_info {
+        grid-column: 1 / 9;
     }
 }
