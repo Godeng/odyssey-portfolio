@@ -70,12 +70,85 @@ li, a {
     }
 
     /* about.html */
-    .profile_photo {
+    .profile {
         grid-column: 1 / 9;
+        height: 142px;
+        background-color: gray;
+        display: inline-block;
     }
 
-    .profile_personal_info {
+    .profile_photo {
+        position: relative;
+        margin-bottom: 42px;
+    }
+
+    .profile_personal_info h2 {
+        font-size: 1em;
+        margin-bottom: 4px;
+    }
+
+    .profile_personal_info p {
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .intro {
         grid-column: 1 / 9;
+        font-weight: 300;
+        line-height: 150%;
+        word-break: keep-all;
+    }
+
+    .intro p {
+        margin-bottom: 4px;
+    }
+
+    .about_flex {
+        grid-column: 1 / 9;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_flex > div {
+        margin-bottom: 42px;
+    }
+
+    .about_flex h2 {
+        font-size: 1em;
+        margin-bottom: 18px;
+    }
+
+    .about_flex li {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4px;
+    }
+
+    .list_bullet {
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+        border-radius: 50%;
+        background-color: #2980b9;
+    }
+
+    .list_text {
+        margin-left: 8px;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .tools_flex {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+    }
+
+    .tools_flex li {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        background-color: aquamarine;
     }
 
     .profile_contact_info {
