@@ -12,6 +12,7 @@ li, a {
     font-weight: 500;
     font-size: 1em;
     text-decoration: none;
+    list-style: none;
 }
 
 .body_grid {
@@ -52,6 +53,14 @@ li, a {
         color: #2980b9
     }
 
+
+    h1 {
+        grid-column: 1 / 9;
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+
     /* index.html */
     .example1 {
         grid-column: 1 / 9;
@@ -73,7 +82,44 @@ li, a {
     .profile_contact_info {
         grid-column: 1 / 9;
     }
-}
+
+    /* til.html */
+
+    .til_list {
+        grid-column: 1 / 9;
+    }
+
+    .til_items {
+        display: flex;
+        justify-content: first baseline;
+        flex-basis: auto;
+        flex-flow: row;
+        margin-bottom: 42px;
+    }
+
+    .til_list_bullet {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: aquamarine;
+    }
+
+    .til_list_text {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    .til_items h2 {
+        font-size: 1em;
+        margin-bottom: 18px;
+    }
+
+    .til_items p {
+        font-weight: 300;
+        line-height: 150%;
+    }
 
 /* tablet */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -177,4 +223,5 @@ li, a {
     .profile_contact_info {
         grid-column: 1 / 9;
     }
+}
 }
